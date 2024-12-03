@@ -1,0 +1,9 @@
+arb-dir: lib/common/l10n
+template-arb-file: app_en.arb
+output-dir: lib/common/gen/localization
+output-localization-file: app_localizations.dart
+untranslated-messages-file: untranslated_messages_file.txt
+synthetic-package: false
+nullable-getter: false
+
+# to build, run `flutter gen-l10n`
