@@ -1,6 +1,10 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:stenography_app/common/router_config.dart';
+import 'package:stenography_app/data/datasources/lsb_plugin.dart';
 import 'package:stenography_app/ui/widgets/background_wrapper.dart';
 import 'package:stenography_app/ui/widgets/button_sa.dart';
 
@@ -23,6 +27,33 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                // ButtonSA(
+                //   text: 'ТЕСТ',
+                //   onPressed: () {
+                //     final bytes = pickImage();
+                //     bytes.then((value) {
+                //       print('files bytes: $value');
+
+                //       if (value == null) {
+                //         return;
+                //       }
+                //       Future<Uint8List> futureResult = LsbPlugin.encode(
+                //         Uint8List.fromList(value),
+                //         Uint8List.fromList(
+                //             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]),
+                //       );
+
+                //       futureResult.then((value) {
+                //         print('result ENCODER: ${value}');
+                //         setState(() {
+                //           newImageBytes = value;
+                //         });
+
+                //         LsbPlugin.decode(value).then((value) => print('result DECODER: $value'));
+                //       });
+                //     });
+                //   },
+                // ),
                 const SizedBox(height: 63),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),

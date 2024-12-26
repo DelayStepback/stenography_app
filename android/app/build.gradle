@@ -65,13 +65,6 @@ flutter {
 }
 
 dependencies {
-    implementation files('libs/pingm.aar')
-    // implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    // implementation(name: 'pingm', ext: 'aar')
-    // {
-    //     exclude group: 'go', module: 'Seq'
-    //     exclude group: 'go', module: 'Universe'
-    //     exclude group: 'go', module: 'error'
-    //     exclude group: 'pingm', module: 'Pingm'
-    // }
+    implementation files('libs/lsb.aar')
+//    implementation files('libs/pingm.aar')
 }
